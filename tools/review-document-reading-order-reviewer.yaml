@@ -1,0 +1,54 @@
+{
+  "name": "review-document-reading-order-reviewer",
+  "description": "Run Document Reading Order Reviewer",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "heading_outline": {
+            "type": "array",
+            "description": "heading outline"
+          },
+          "table_header_associations": {
+            "type": "array",
+            "description": "table header associations"
+          },
+          "tagging_review": {
+            "type": "string",
+            "description": "tagging review"
+          }
+        },
+        "required": [
+          "heading_outline",
+          "table_header_associations",
+          "tagging_review"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-document-reading-order-reviewer.py",
+    "runtime": "python3"
+  }
+}

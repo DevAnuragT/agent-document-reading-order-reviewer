@@ -1,0 +1,24 @@
+{
+  "slug": "document-reading-order-reviewer",
+  "title": "Document Reading Order Reviewer",
+  "category": "accessibility",
+  "description": "Check reading-order evidence for headings, tables, and tagged content.",
+  "fields": {
+    "heading_outline": {
+      "label": "heading outline",
+      "kind": "list",
+      "minimum": 1
+    },
+    "table_header_associations": {
+      "label": "table header associations",
+      "kind": "list",
+      "minimum": 1
+    },
+    "tagging_review": {
+      "label": "tagging review",
+      "kind": "required",
+      "minimum": 0
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}

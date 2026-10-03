@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: document-reading-order-reviewer
+version: 0.1.0
+description: Check reading-order evidence for headings, tables, and tagged content.
+skills:
+  - document-reading-order-reviewer-skill
+tools:
+  - review-document-reading-order-reviewer
+tags:
+  - accessibility
+  - evidence-driven
